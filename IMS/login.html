@@ -4,75 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMS Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-        
-        .login-container {
-            width: 300px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        
-        .login-form {
-            margin-top: 20px;
-        }
-        
-        .login-form input[type="text"], .login-form input[type="password"] {
-            width: 80%;
-            height: 40px;
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        
-        .login-form input[type="submit"] {
-            width: 80%;
-            height: 40px;
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
-        .login-form input[type="submit"]:hover {
-            background-color: #3e8e41;
-        }
-        
-        .create-account-btn {
-            width: 80%;
-            height: 40px;
-            background-color: #337ab7;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        
-        .create-account-btn:hover {
-            background-color: #23527c;
-        }
-        
-        .error-message {
-            color: red;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
+    <div id="nav-bar"></div>
     <div class="login-container">
         <h2>IMS Login</h2>
         <form class="login-form" action="" method="post">
@@ -84,6 +19,7 @@
         </form>
     </div>
     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         const loginForm = document.querySelector('.login-form');
         loginForm.addEventListener('submit', (e) => {
@@ -101,6 +37,11 @@
             } else {
                 document.getElementById('error-message').innerHTML = 'No account found';
             }
+        });
+        
+        // Load the nav bar
+        $(function() {
+        $("#nav-bar").load("/IMS/nav.html");
         });
     </script>
 </body>
