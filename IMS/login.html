@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMS Login</title>
     <link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	 
 </head>
 <body>
-    <div id="nav-bar"></div>
+	<nav id="nav-bar">
+		<ul>
+            <li><div class="logo">
+            <a href="index.html"><img src="../IMS/pics/logo.jpeg" alt="Logo"></a></div></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+		</nav>
+	
     <div class="login-container">
         <h2>IMS Login</h2>
         <form class="login-form" action="" method="post">
@@ -19,30 +33,7 @@
         </form>
     </div>
     
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        const loginForm = document.querySelector('.login-form');
-        loginForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const username = document.querySelector('input[name="username"]').value;
-            const password = document.querySelector('input[name="password"]').value;
-            const storedAccount = localStorage.getItem('account');
-            if (storedAccount) {
-                const account = JSON.parse(storedAccount);
-                if (username === account.email && password === account.password) {
-                    window.location.href = 'home.html';
-                } else {
-                    document.getElementById('error-message').innerHTML = 'Invalid username or password';
-                }
-            } else {
-                document.getElementById('error-message').innerHTML = 'No account found';
-            }
-        });
-        
-        // Load the nav bar
-        $(function() {
-        $("#nav-bar").load("/IMS/nav.html");
-        });
-    </script>
+   
+   
 </body>
 </html>

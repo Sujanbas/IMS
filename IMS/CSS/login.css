@@ -5,16 +5,24 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+.nav-bar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
 
 .login-container {
     width: 300px;
-    margin: 50px auto;
+    margin:100px auto;
+	top:200px;
     padding: 20px;  
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+	
 }
 
 .login-form {
