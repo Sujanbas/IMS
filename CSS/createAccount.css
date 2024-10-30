@@ -1,0 +1,72 @@
+
+     body {
+                font-family: Arial, sans-serif;
+                background-image: url('../pics/IMS.jpeg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        
+        .create-account-container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .create-account-form {
+            margin-top: 20px;
+        }
+        
+        .create-account-form input[type="text"], .create-account-form input[type="email"], .create-account-form input[type="password"] {
+            width: 80%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .create-account-form input[type="submit"] {
+            width: 80%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .create-account-form input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        .create-account-form input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        p.error-message {
+            font-size: 18px;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+       p.error_message_True{
+        background-color: #3e8e41;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+
+       }
+       p.error_message_False{
+        background-color: #c51e26;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+
+       }

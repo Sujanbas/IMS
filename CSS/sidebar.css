@@ -1,0 +1,88 @@
+ 
+
+.sidebar {
+    width: 250px;
+    min-height: auto;
+    background-color: rgba(43, 43, 43, 0.9); /* More transparent background to match style */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for a modern look */
+}
+
+.profile {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.profile img {
+    width: 80px; /* Increased size for a better visual effect */
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #fff; /* Add border for a polished look */
+}
+
+.profile p {
+    font-size: 18px;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+ul li {
+    width: 100%;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-left: 5px solid transparent;
+    transition: background-color 0.3s, border-left 0.3s;
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background for each link */
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+ul li a i {
+    margin-right: 10px;
+}
+
+ul li a:hover,
+ul li a.active {
+    background-color: hwb(202 15% 56%);
+    border-left: 5px solid #fff;
+}
+
+.logout {
+    margin-top: auto;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Style consistency */
+    border-radius: 5px;
+}
+
+.logout:hover {
+    background-color: hwb(349 7% 18%);
+    color: #fff;
+}

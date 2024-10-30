@@ -1,0 +1,263 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: auto;
+    background-image: url('../pics/IMS.jpeg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Main container setup */
+#main-container {
+    display: flex;
+    min-height: auto;
+}
+
+/* Main content area styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f4f4f4;
+}
+
+.dashboard_topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color:  #3e3d3d;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.3);
+    color: #ecf0f1;
+    border-radius: 5px;
+}
+
+.dashboard_topbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-left: 10px;
+}
+ h2 {
+    color: #0ff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; 
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.content-area {
+    max-width: 100%;
+    margin: 1em 0.5em 1em 0.5em;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.3);
+}
+
+/*Main content css starts here*/
+* Add items css */
+
+.add-item-container {
+    max-width: 100%;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.3);
+}
+
+/* Header Styles */
+.add-item-container h2 {
+    color: #0ff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.add-item-form input[type="text"],
+.add-item-form input[type="number"] {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #222;
+    color: #0ff;
+    border: 1px solid #f9f2f2;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.add-item-form-input[type="text"]::placeholder,
+.add-item-form-input[type="number"]::placeholder{
+    color: #888;
+    text-align: center;
+}
+/* Submit Button Styles */
+.add-item-form input[type="submit"] {
+    width: 80%;
+    height: 40px;
+    background-color: #0ff;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-item-form input[type="submit"]:hover {
+    background-color: #f0f;
+}
+/* Error Message Styles */
+p.error-message {
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    font-weight: bold; 
+    text-align: center;
+}
+
+p.error_message_True{
+background-color: #0f0;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 5px;
+
+}
+p.error_message_False{
+background-color: #f00;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 5px;
+
+}
+/*Items list*/
+.items-container{
+    width: 100%;
+    margin: 5px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.3);
+}
+.items-container h3 {
+    color: #0ff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #222;
+}
+
+thead th {
+    color: #0ff;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #444;
+}
+
+tbody tr {
+    background-color: #1a1a1a;
+    transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+    background-color: #333;
+}
+
+tbody td {
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.action-buttons-container {
+    display: flex;             /* Use flexbox to arrange buttons side by side */
+    align-items: center;      /* Vertically align buttons */
+}
+
+.action-button {
+    background-color: #0ff;   
+    color: #111;              
+    border: none;
+    border-radius: 5px;            
+    cursor: pointer;          
+    padding: 5px 10px;      
+    font-weight: bold;        
+    transition: background-color 0.3s ease; 
+    margin-right: 10px;   
+}
+
+.action-button:hover {
+    background-color: #f0f;   
+}
+
+.delete-button {
+    margin-top: .2em;       
+}
+
+
+
+.search-container{
+    background-color: #0ff;
+    height:6.2em;
+    margin-bottom: 0.5em;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.search-button{
+    margin-top: 1em;
+    background-color:#0f0;
+    font-size: large;
+    height: 30px;
+    width: 15%;
+    color: #111;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-button::hover{
+    background-color: #f0f;
+}
+.search-input{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: large;
+    height: 30px;
+    width: 25%;
+    color: #111;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.Results-message{
+    background-color: #f00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
