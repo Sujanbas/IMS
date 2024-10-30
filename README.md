@@ -1,4 +1,5 @@
 **# Inventory Management System (IMS)
+![Screenshot of IMS](Ims Home.png)
 
 ## Overview
 
