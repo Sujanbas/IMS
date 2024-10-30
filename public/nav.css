@@ -1,0 +1,48 @@
+
+		/* Add some basic styling to our nav bar */
+		
+		nav {
+			background-color: #333;
+			padding: 0.5em;
+			text-align: center;
+			margin: 0;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+		
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		nav li {
+			margin-right: 50px;
+		}
+		
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+		}
+		
+		nav a:hover {
+			color: #ccc;
+		}
+		
+		.logo {
+			font-size: 24px;
+			font-weight: bold;
+			color: #fff;
+			margin-right: 10px;
+		}
+		.logo img{
+			height:60px;
+			margin-left:50px;
+		}

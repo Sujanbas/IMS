@@ -1,0 +1,136 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: auto;
+    background-image: url('../pics/IMS.jpeg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Main container setup */
+#main-container {
+    display: flex;
+    min-height: auto;
+}
+
+/* Main content area styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f4f4f4;
+}
+
+.dashboard_topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color:  #3e3d3d;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.3);
+    color: #ecf0f1;
+    border-radius: 5px;
+}
+
+.dashboard_topbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-left: 10px;
+}
+ h2 {
+    color: #0ff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; 
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.content-area {
+    max-width: 100%;
+    margin: 1em 0.5em 1em 0.5em;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.3);
+}
+#chart_div,
+.user_role{
+    max-width: 100%;
+    margin: 1em 0.5em 1em 0.5em;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.3);
+    border-radius: 5px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #222;
+}
+
+thead th {
+    color: #0ff;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #444;
+}
+
+tbody tr {
+    background-color: #1a1a1a;
+    transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+    background-color: #333;
+}
+
+tbody td {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+.user_role input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #0ff;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user_role input[type="submit"]:hover {
+    background-color: #f0f;
+}
+.user_role select{
+    width: 50%;
+    height: 40px;
+    background-color: rgba(234, 246, 246, 0.49);
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/*Notification menu*/
+.notification-bar {
+    background-color: #ed5c68; /* Light red background */
+    color: #721c24; /* Dark red text */
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #f5c6cb; /* Red border */
+    border-radius: 5px;
+}
