@@ -1,5 +1,5 @@
 **# Inventory Management System (IMS)
-![Screenshot of IMS](https://github.com/sujanbas/IMS/Ims Home.png)
+![Screenshot of IMS](https://github.com/sujanbas/IMS/ImsHome.png)
 
 
 ## Overview
